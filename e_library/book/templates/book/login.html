@@ -1,0 +1,19 @@
+
+<h1>Login</h1>
+
+<form action="{% url 'book:login' %}" method="post">
+{% csrf_token %}
+Username: <input type="text" name="username" />
+<br>
+Password: <input type="password" name="password" />
+<br>
+<input type="submit" value="Submit">
+</form>
+<body>
+<div>
+    <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="/book/register"><span class="glyphicon glyphicon-user"></span>register</a></li>
+</ul>
+</div>
+</body>

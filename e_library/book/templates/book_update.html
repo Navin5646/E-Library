@@ -1,0 +1,10 @@
+{% include 'base.html' %}
+{% load crispy_forms_tags %}
+<h1>
+    update the books here
+</h1>
+<form method='POST' action=".">{%csrf_token%}
+    <!--{{form.as_p}}-->
+    {{form|crispy}}
+    <input type="submit",value="update"></input>
+</form>

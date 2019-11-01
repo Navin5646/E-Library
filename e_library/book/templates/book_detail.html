@@ -1,0 +1,11 @@
+{% include 'base.html' %}
+<h1> the book detail </h1>
+<ul>
+    <li>{{book.name}}</li>
+    <li>{{book.author}}</li>
+    <li>{{book.publish_date}}</li>
+    <li>{{book.price}}</li>
+
+</ul>
+<a href ="/book/list" class="btn btn-default">List View</a>
+<a href ="/book/{{book.id}}/update" class="btn btn-primary btn-sm" >update</a>

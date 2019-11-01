@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>the designing</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+    body {
+
+        background-image: url("https://3.imimg.com/data3/KR/CN/MY-14896812/online-library-management-system-500x500.jpg"); background-size: cover; display: block;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid" style="background-color:DodgerBlue;">
+    <div class="navbar-header" >
+
+        <a class="navbar-brand" href="/book" >E-Library</a>
+    </div>
+	  
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="/book/list">Home</a></li>
+      <li class="active"><a href="/book/create" >Add Book</a></li>
+    </ul>
+	
+      <ul class="nav navbar-nav navbar-right">
+		  
+          <li><a href="/book/logout"><span class="glyphicon glyphicon-user" style="background-color:Tomato;"></span> logout</a></li>
+          
+      </ul>
+  </div>
+</nav>
+{% block content%} {%endblock content%}
+</body>
+</html>
